@@ -1,0 +1,17 @@
+php/op/luogo_scheda\.php
+sql/biglietteriadump\.sql
+*.log
+*.aux
+*.log
+*.fls
+*.out
+*.toc
+*.fdb_latexmk
+*.dvi
+*.swp
+*.synctex.gz
+*.DS_Store
+*.gz
+*.lof
+*.lot
+

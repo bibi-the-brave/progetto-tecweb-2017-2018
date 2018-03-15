@@ -1,0 +1,564 @@
+* {
+    padding: 0; /*resetto il valore di default impostati dai browser, mettere sempre*/
+    margin: 0;
+}
+
+/*--------------------
+INIZIO Header & Nav
+--------------------*/
+header {
+    background-color: #003366;
+    color: #ffffff;
+    width:100%;
+    height: 4em;
+}
+
+nav {
+    background-color: #003366;
+    color: #ffffff;
+    width:100%;
+    height: 1.5em;
+    /* padding-bottom: 1em; */
+}
+
+#logoTitle{
+    float: left;
+    width: 50%;
+    font-size: 1em;
+}
+
+#logoTitle img{
+    display: block;
+    float: left;
+    margin-left: 2em;
+    margin-right: 0.5em;
+    margin-top: 0.5em;
+    width: 3em;
+}
+
+#logoTitle h1{
+    margin-top: 0.5em;
+    /* margin-left: 2.8em; */
+}
+
+#hamburgerMenu{
+    display: none;
+}
+
+#logoTitle a{
+    /* display: none; */
+}
+
+#findAll{
+    padding-top: 1.8em;
+    padding-right: 1em;
+    float: right;
+}
+
+#findAll input{
+    height: 1.5em;
+    box-sizing: inherit;
+}
+
+#linkToCorpo{
+    position:absolute;
+    height:0;
+    overflow:hidden;
+    
+}
+
+nav ul{
+    display: inline-block;
+    overflow-x: hidden;
+    width: 60%;
+}
+
+nav li{
+    display:inline;
+    padding-left: 2em;
+    color: #cccc99;
+    /* float: left; */
+}
+/* Link menù */
+nav abbr{
+    text-decoration: none;
+}
+
+nav a:link {
+    color: #ffffff;
+}
+
+/* visited link */
+nav a:visited {
+    color: #cccc99;
+}
+
+/* mouse over link */
+nav a:hover {
+    color: #ff6666;
+}
+
+
+#navLog{
+    float: right;
+    display: inline;
+    padding-right: 1em;
+    color: #cccc99;
+}
+#navLog ul{
+    width: 100%;
+}
+
+/*FINE Header & Nav*/
+
+/*--------------------------
+INIZIO messaggi verso utente
+--------------------------*/
+.message-success{
+    background-color: #009966;
+    color: #ffffff;
+    text-align: center;
+}
+
+.message-warning{
+    background-color: #cc6600;
+    color: #ffffff;
+    text-align: center;
+}
+
+.message-fail{
+    background-color: #cc0000;
+    color: #ffffff;
+    text-align: center;
+}
+
+.messageOff{
+    display: none;
+}
+
+/*FINE messaggi verso utente*/
+
+
+
+html, body {
+    max-width: 1024px;  /* larghezza massima anche per schermi grandi */
+    margin: auto;       /* il browser da solo centra il contenuto */
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-size:100%;
+}
+
+body{
+    border: 1px solid #303030; /* errore comune mettere questo nel precedente:
+    					avresti un bordo doppio! */
+
+}
+
+a:link {
+    color: #0000EE;
+}
+/* visited link */
+a:visited {
+    color: #009999;
+}
+
+/* selected link */
+a:hover {
+    color: #ff6666;
+}
+
+.tableResponsive{
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    background-color: #dfdfdf;
+    border: solid 1px #000000;
+    border-collapse: collapse;/*fa collassare i bordi della
+    						tabella con quelli dei th, e td
+    						in modo da non visualizzare spazi*/
+}
+
+thead {
+	background-color: #003366;
+    color: #cccccc;
+    text-align: left;
+}
+
+/*tabella a strisce di zebra*/
+tr:nth-child(even) {background-color: #eeeeee;}
+tr:nth-child(even) {background-color: #ffffff;}
+
+th, td {
+	padding: 0.5em;
+}
+
+th a:link {
+    text-decoration: underline;
+    cursor: pointer;
+    color: #cccccc;
+}
+
+th a:visited{
+    color: #cccccc;
+}
+
+td {
+	vertical-align: bottom;
+}
+
+.borderDl dl {
+    border: 3px double #ccc;
+    padding: 0.5em;
+}
+.borderDl dt {
+    float: left;
+    clear: left;
+    padding-left: 0.3em;
+    font-weight: bold;
+}
+
+.borderDl dd {
+    margin: 0 0 0 7em;
+    padding: 0 0 0.5em 0;
+}
+
+/*--------------------
+    INIZIO Login Registrazione Modifiche
+--------------------*/
+.box {
+    margin: 1em auto 1em auto;
+    width: 50%;
+    min-width: 25em;
+    border: 2px solid #303030;
+    display: block;
+    background-color: #003366;
+    color: #ffffff;
+    padding: 0.6em;
+}
+
+.box fieldset{
+    padding: 1em;
+}
+
+.box h3, .box h2, .box h1{
+    text-align: center;
+    background-color: #303030;
+    color: #ffffff;
+    padding: 0.2em;
+    font-size: 1.5em;
+    border-bottom: ridge #CCCCCC;
+}
+.box a:link {
+    color: #ffffff
+}
+.box a:visited {
+    color: #cccc99
+}
+
+.box input{
+    width: 99.3%;
+    display: block;
+    height: 2em;
+    margin: auto;
+    margin-bottom: 0.5em;
+    font-size: 16px;
+}
+
+.box input[type="radio"]{
+    width: auto;
+    display: inline;
+    height: auto; 
+}
+
+.box #buttonAccedi{
+    display: block;
+    margin: auto;
+    width: 50%;
+}
+.box p{
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+.box select{
+    width: 100%;
+    height: 1.5em;
+    font-size: 16px;
+}
+
+.box label{
+    font-weight: bold;
+}
+
+.box textarea{
+        resize: none;
+        width: 99.5%;
+        height: 15em;
+    }
+
+.boxInline{
+    margin-top: 1em;
+    width: 100%;
+}
+
+.boxInline input{
+    display: inline;
+    width: 49%;
+}
+
+.box fieldset{
+    margin-bottom: 0.5em;
+}
+
+.box #durataFinita{
+    padding: 1em;
+}
+
+#buttonRight{
+    float: right;
+}
+
+/*  FINE Login Registrazione Modifiche*/
+
+/*--------------------
+    INIZIO box delle categorie
+--------------------*/
+
+.categoryBox{
+    margin: 1.2em 1.2em  0 0;  
+    border:  #000000;
+    background: #dddddd;
+    overflow: auto
+}
+
+.categoryBox .categoryImg{
+    width: 20%;
+    float: left;
+}
+
+.categoryBox .categoryImg img{
+    display: block;
+    width: 100%;
+}
+
+.categoryBox .categoryText{
+    
+    margin-left: 22%;
+}
+
+.categoryBox .categoryText h3{
+    font-weight: bold;
+    font-size: 2.5em;
+    clear: none;
+    float: none;
+}
+
+.categoryBox .categoryText p{
+    margin-top: 1em; 
+    font-size: 1.4em;
+}
+
+#modifyCategoryBox {
+    margin: 0.45em 0 0 0;
+    overflow: auto
+}
+
+#modifyCategoryBox #modifyImg {
+    text-align: center;
+}
+
+#modifyCategoryBox #modifyImg img {
+    width: 50%;
+    height: 50%;
+}
+
+/*  FINE box delle categoire*/
+
+/*--------------------
+    INIZIO pannello amministrazione
+--------------------*/
+#amministrazione{
+    background-color: #ffffff;
+}
+#amministrazione li{
+    display: block;
+    margin: auto;
+    width: 100%;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    text-align: center;
+}
+#amministrazione a{
+    text-decoration: underline;
+}
+
+/* Link amm */
+
+/* #amministrazione a:link {
+    color: #ffffff;
+    text-decoration: none;
+}
+#amministrazione a:visited {
+    color: #cccccc;
+}
+#amministrazione a:hover {
+    font-weight: bold;
+}
+#amministrazione a:hover {
+    color: #cccccc;
+} */
+
+
+/*FINE pannello amministrazione*/
+
+
+/*--------------------
+    INIZIO content UNICI \ GLOBAL
+--------------------*/
+
+.title{
+    background-color: #003366;
+    /*padding-top: 6px;*/
+    padding-bottom: 0.5em;
+}
+.title h1, .title h2, .title h3{
+    color: #ffffff;
+    padding-top: 6px;
+    text-align: center;
+    border-top: 3px ridge #CCCCCC;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.title a{
+    cursor: pointer;
+}
+
+.content {
+    width: 95%;
+    margin: auto;
+    display: block;
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
+
+.content h2, h3, h4, h5, h6 {
+    margin-top: 0.4em;
+    margin-bottom: 0.4em;
+}
+
+.linkDestra {
+    width: 100%;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+    text-align: right;
+}
+
+.marginTopBottom{
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.rightLink{
+    float:right;
+}
+
+
+#corpo{
+    background-color: #ffffff;
+}
+
+#corpo p{
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+}
+
+#corpo h1, h2, h3, h4, h5, h6 {
+   /* margin-top: 0.4em;
+    margin-bottom: 0.4em;*/
+  }
+
+
+#corpo aside, #corpo section{
+    margin-bottom: 1em;
+}
+/*   FINE content unici \ GLOBAL    */
+
+/*--------------------
+    INIZIO footer
+--------------------*/
+footer{
+    background-color: #003366;
+    color: #ffffff;
+    font-size: 0.8em;
+    padding: 1em;
+}
+.footerContent {
+    border-top: 3px ridge #CCCCCC;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+/*Link footer*/
+footer a{
+    color: #ffffff;
+}
+
+footer a:link {
+    color: #cccc99;
+}
+
+footer img{
+    float: right;
+}
+/*FINE footer*/
+
+
+/*INIZIO form di ricerca*/
+#filterform {
+    margin: 0.5em auto 0.5em auto;
+    display: block;
+    width: 100%;
+}
+
+#filterform input{
+    height: 2em;
+}
+
+#filterform #cercaButton{
+    /* sotto questa soglia rimpicciolendo esplode */
+    width: 15%;
+}
+
+
+#filterform #tuttiButton{
+    width: 15%;
+}
+#filterform #cercaTextLabel{
+    position:absolute;
+    height:0;
+    overflow:hidden;
+}
+
+#filterform #cercaText{
+    height: 1.7em;
+    width: 50%;
+}
+
+#titlePan{
+    border: none;
+}
+/*FINE form di ricerca*/
+
+.invisibleLabel {
+    line-height: 0;
+    font-size : 0px;
+    overflow: hidden;
+}
+
+.infoImg{
+    display: block;
+    width  :90%;
+    margin-left: 4%;
+}
