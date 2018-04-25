@@ -2,5 +2,4 @@
 
 Eccher, Favero, Maschio, Parolini, reso pubblico il 15/3/2018
 
-Il contenuto della cartella php deve andare dentro a public_html, il file biglietteria.sql deve essere importato.
-Per modificare la password e lo username per accedere al database, modificare il contenuto di php/config.php.
+Il file biglietteria.sql deve essere importato; per modificare la password e lo username necessari per effettuare l'accesso al database bisogna modificare il contenuto di php/config.php.
